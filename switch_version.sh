@@ -51,7 +51,7 @@ do
       4)
         printf "\n\n"
         read -p "TF version to download: (e.g.: x.xx.xx): " TFVERSIONDOWNLOAD
-    	wget https://releases.hashicorp.com/terraform/$TFVERSIONDOWNLOAD/terraform_$TFVERSIONDOWNLOAD\_linux_amd64.zip
+    	wget --no-check-certificate https://releases.hashicorp.com/terraform/$TFVERSIONDOWNLOAD/terraform_$TFVERSIONDOWNLOAD\_linux_amd64.zip
     	printf "\n\n"
         ;;
        *)
